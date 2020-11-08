@@ -1,7 +1,6 @@
 language: node_js
 
 node_js:
-- node
 - 'lts/*'
 
 cache: npm
@@ -15,12 +14,12 @@ jobs:
   include:
     - stage: "test"                # naming the Tests stage
       name: "Unit Tests"            # names the first Tests stage job
-      script: ./tests/unit-tests/unit-tests.js
+      script: npm run ./tests/unit-tests/unit-tests.js
     
-    - stage: "test"
-      name: "Integration Tests"
-      script: ./tests/integration-tests/integration-tests.js
+    # - stage: "test"
+    #   name: "Integration Tests"
+    #   script: ./tests/integration-tests/integration-tests.js
     
-    - stage: deploy
-      name: "Deploy to Blablah"
-      script: ./tests/integration-tests/integration-tests.js
+    # - stage: deploy
+    #   name: "Deploy to Blablah"
+    #   script: ./tests/integration-tests/integration-tests.js
