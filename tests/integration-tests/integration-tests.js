@@ -1,6 +1,6 @@
 var assert = require('assert'),
     vows = require('vows'),
-    seriousCalculations = require('../');
+    seriousCalculations = require('../../');
   
 vows.describe('serious-calculations-integration').addBatch({
   'when performing serious calculations': {

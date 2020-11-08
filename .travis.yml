@@ -14,7 +14,7 @@ jobs:
   include:
     - stage: "test"                # naming the Tests stage
       name: "Unit Tests"            # names the first Tests stage job
-      script: npm run ./tests/unit-tests/unit-tests.js
+      script: npm run unit-test
     
     # - stage: "test"
     #   name: "Integration Tests"
