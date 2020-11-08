@@ -16,9 +16,9 @@ jobs:
       name: "Unit Tests"            # names the first Tests stage job
       script: npm run unit-test
     
-    # - stage: "test"
-    #   name: "Integration Tests"
-    #   script: ./tests/integration-tests/integration-tests.js
+    - stage: "test"
+      name: "Integration Tests"
+      script: npm run integration-test
     
     # - stage: deploy
     #   name: "Deploy to Blablah"
