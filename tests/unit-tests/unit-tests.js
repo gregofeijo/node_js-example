@@ -2,7 +2,7 @@ var assert = require('assert'),
     vows = require('vows'),
     seriousCalculations = require('../');
   
-vows.describe('serious-calculations').addBatch({
+vows.describe('serious-calculations-unit').addBatch({
   'when performing serious calculations': {
     topic: function() {
       return seriousCalculations.performSeriousCalculations(4);

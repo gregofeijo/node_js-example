@@ -5,3 +5,17 @@ node_js:
 - 'lts/*'
 
 cache: npm
+
+jobs:
+  include:
+    - stage: "tests"                # naming the Tests stage
+      name: "Unit Tests"            # names the first Tests stage job
+      script: ./tests/unit-tests
+    
+    - stage: "tests"
+      name: "Integration Tests"
+      script: ./tests/integration-tests
+    
+    - stage: deploy
+      name: "Deploy to Blablah"
+      script: ./tests/integration-tests
