@@ -6,16 +6,21 @@ node_js:
 
 cache: npm
 
+stages:
+  - compile
+  - test
+  - deploy
+
 jobs:
   include:
-    - stage: "tests"                # naming the Tests stage
+    - stage: "test"                # naming the Tests stage
       name: "Unit Tests"            # names the first Tests stage job
-      script: ./tests/unit-tests
+      script: ./tests/unit-tests/unit-tests.js
     
-    - stage: "tests"
+    - stage: "test"
       name: "Integration Tests"
-      script: ./tests/integration-tests
+      script: ./tests/integration-tests/integration-tests.js
     
     - stage: deploy
       name: "Deploy to Blablah"
-      script: ./tests/integration-tests
+      script: ./tests/integration-tests/integration-tests.js

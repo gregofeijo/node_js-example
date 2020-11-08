@@ -9,9 +9,6 @@
     "type": "git",
     "url": "git://github.com/travis-ci/travis-ci-node.js-example.git"
   },
-  "scripts": {
-    "test": "vows test/*.js"
-  },
   "engines": {
     "node": ">= 0.4"
   },
