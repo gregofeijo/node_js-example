@@ -5,11 +5,14 @@ orbs:
 
 jobs:
   unit-test:
-    docker:
-      - image: 'cimg/base:stable'
+    executor:
+      name: node/default
+      tag: '13.14'
     steps:
       - checkout
-      - run: npm run unit-test
+      - node/install-packages
+      - run:
+          command: npm run unit-test
 
   # integration-test:
   #   docker:
