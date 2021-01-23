@@ -10,14 +10,14 @@
     "url": "git://github.com/travis-ci/travis-ci-node.js-example.git"
   },
   "scripts": {
-    "unit-test": "vows tests/unit-tests/*.js",
-    "integration-test": "vows tests/integration-tests/*.js"
+    "unit-test": "jest tests/unit-tests/unit-tests.js",
+    "integration-test": "jest __tests__/integration-tests/integration-tests.js"
   },
   "engines": {
     "node": ">= 0.4"
   },
   "dependencies": {},
   "devDependencies": {
-    "vows": "latest"
+    "jest": "^26.6.3"
   }
 }
