@@ -1,0 +1,24 @@
+version: "1.0"
+
+stages:
+  - "clone"
+  - "test"
+
+steps:
+  clone:
+    title: "Cloning repository"
+    type: "git-clone"
+    repo: "gregofeijo/node_js-example"
+    revision: "${{CF_BRANCH}}"
+    git: "github"
+    stage: "clone"
+
+  unit-test:
+    title: "Unit Tests"
+    stage: "test"
+    type: "freestyle"
+    image: node:13.14
+    working_directory: "${{clone}}" # Running command where code cloned
+    commands:
+      - "npm install"
+      - "npm run unit-test"

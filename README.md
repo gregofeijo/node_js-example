@@ -18,11 +18,11 @@ This is what Travis CI Clojure builder will run by default.
 For more information, see `.travis.yml`, read our [Getting Started guide](http://about.travis-ci.org/docs/user/getting-started/) and [the rest of the documentation](http://about.travis-ci.org/).
 
 
-## travis-ci.org badges
+## Codefresh badges
 
 Here is a sample status icon showing the state of the master branch:
 
-[![Build Status](https://travis-ci.com/gregofeijo/node_js-example.svg?branch=master)](https://travis-ci.com/gregofeijo/node_js-example)
+[![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/gregofeijo/default%2Fnode_js-example?type=cf-1&key=eyJhbGciOiJIUzI1NiJ9.NjAwYzlkNDc0OTg4MTgyOGNlNjkwYWVi.5Ha7zEuZVpFRjSn4qBz1SyUXXk0zNrJhkcqr9Np2S5s)]( https://g.codefresh.io/pipelines/edit/new/builds?id=600c9de8d4018c7185f02e30&pipeline=node_js-example&projects=default&projectId=600c9d764fd78a8af9cc9cfa) 
 
 
 ## Support
