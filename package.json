@@ -10,7 +10,7 @@
     "url": "git://github.com/travis-ci/travis-ci-node.js-example.git"
   },
   "scripts": {
-    "unit-test": "jest tests/unit-tests/unit-tests.js",
+    "unit-test": "jest __tests__/unit-tests/unit-tests.js",
     "integration-test": "jest __tests__/integration-tests/integration-tests.js"
   },
   "engines": {
