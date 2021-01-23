@@ -1,0 +1,25 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@4.1.0
+
+jobs:
+  unit-test:
+    docker:
+      - image: 'cimg/base:stable'
+    steps:
+      - checkout
+      - run: npm run unit-test
+
+  # integration-test:
+  #   docker:
+  #     - image: 'cimg/base:stable'
+  #   steps:
+  #     - checkout
+  #     - run: npm run integration-test
+
+workflows:
+  node-tests:
+    jobs:
+      - unit-test
+      #- integration-test
