@@ -22,7 +22,7 @@ For more information, see `.travis.yml`, read our [Getting Started guide](http:/
 
 Here is a sample status icon showing the state of the master branch:
 
-[![Build Status](https://travis-ci.com/gregofeijo/node_js-example.svg?branch=master)](https://travis-ci.com/gregofeijo/node_js-example)
+[![Build Status](https://gregofeijo.semaphoreci.com/badges/node_js-example/branches/semaphore-cicd.svg?style=shields)](https://gregofeijo.semaphoreci.com/projects/node_js-example)
 
 
 ## Support
