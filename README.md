@@ -22,7 +22,7 @@ For more information, see `.travis.yml`, read our [Getting Started guide](http:/
 
 Here is a sample status icon showing the state of the master branch:
 
-[![Build Status](https://travis-ci.com/gregofeijo/node_js-example.svg?branch=master)](https://travis-ci.com/gregofeijo/node_js-example)
+[![Build Status](https://gitlab.com/gregofeijo/node_js-example/badges/gitlab-cicd/pipeline.svg)](https://gitlab.com/gregofeijo/node_js-example/-/pipelines)
 
 
 ## Support

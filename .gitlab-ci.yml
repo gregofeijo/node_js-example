@@ -16,4 +16,4 @@ unit-tests:
   stage: test
   script:
     - npm install
-    - node run unit-test
+    - npm run unit-test
